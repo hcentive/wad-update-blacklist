@@ -1,0 +1,9 @@
+{
+  "blacklistRuleID" : YOUR_BLACKLIST_ID,
+  "blacklistRuleName" : YOUR_BLACKLIST_NAME,
+  "ipsetPrefix" : YOUR_IPSET_PREFIX,
+  "ipsetIncrementBy" : 1,
+  "maxDescriptorsPerIpSet" : 1000,
+  "maxDescriptorsPerIpSetUpdate" : 1000,
+  "ipSetLimit" : 10
+}

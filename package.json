@@ -1,0 +1,26 @@
+{
+  "name": "waf-update-blacklist",
+  "version": "1.0.0",
+  "description": "Updates AWS WAF IP blacklist master file from public RBLs",
+  "main": "index.js",
+  "dependencies": {
+    "async": "2.0.0-rc.2",
+    "aws-sdk": "2.2.48",
+    "https": "1.0.0",
+    "underscore": "1.8.3"
+  },
+  "devDependencies": {
+    "async": "2.0.0-rc.2",
+    "aws-sdk": "2.2.48",
+    "https": "1.0.0",
+    "underscore": "1.8.3",
+    "grunt": "latest",
+    "grunt-aws-lambda": "latest",
+    "npm": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Satyendra Sharma <satyendra.sharma@hcentive.com>",
+  "license": "MIT"
+}

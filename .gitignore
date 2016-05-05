@@ -1,0 +1,6 @@
+.DS_Store
+.bundle
+
+conf/*.json
+node_modules
+node_modules/*
