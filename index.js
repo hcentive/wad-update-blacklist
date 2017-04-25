@@ -9,8 +9,8 @@ var db = require('./lib/dynamodb.js');
 // fw.getSignatures(1, null, callback);
 // fw.getIPBlacklists(1, null, callback);
 
-// exports.handler = function(event, context) {
-var updateFirewall = function(callback) {
+exports.handler = function(event, context) {
+// var updateFirewall = function(callback) {
   db.getActiveIPRecords(function (err, iprecords) {
     if (err) {
       console.log(err, null);
@@ -38,9 +38,11 @@ var updateFirewall = function(callback) {
         },
         function (err) {
           if (err) {
-            console.log(err, err.stack)
+            // console.log(err, err.stack)
+            context.done('error', 'IP blacklist update failed : ' + err)
           } else {
-            console.log("Done!");
+            // console.log("Done!");
+            context.done("Done!")''
           }
         });
       }
@@ -48,7 +50,7 @@ var updateFirewall = function(callback) {
   });
 };
 
-updateFirewall(callback);
+// updateFirewall(callback);
 
 function callback(err, data) {
   if (err) {
